@@ -6,9 +6,9 @@ function increment() {
     count.value++
 }
 
-function updateCount(e) {
-    count.value = Number(e.target.value)
-}
+// function updateCount(e) {
+//     count.value = Number(e.target.value)
+// }
 
 // export default {
 //     data() {
@@ -29,6 +29,6 @@ function updateCount(e) {
 <template>
   <h1>{{count}}</H1>
   <button @click="increment">+</button>
-  <input @input="updateCount" />
+  <input v-model="count" />
 </template>
 
